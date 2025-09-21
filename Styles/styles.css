@@ -1,0 +1,172 @@
+* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background: #333333;
+    color: #fff;
+}
+.logo {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #87CEEB; 
+}
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+.nav-links li {
+    margin-left: 1rem;
+}
+.nav-links a {
+    color: #87CEEB; 
+    text-decoration: none;
+}
+.hamburger {
+    display: none;
+    font-size: 1.5rem;
+    color: #87CEEB; 
+}
+
+
+.hero {
+    background: url('../images/hero-bg.jpg') center/cover;
+    text-align: center;
+    padding: 4rem 1rem;
+    color: #fff;
+}
+.hero h1 {
+    font-size: 2rem;
+    color: #32CD32; 
+}
+.cta-btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: #32CD32; 
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.car-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+.car-card {
+    border: 1px solid #CCCCCC; 
+    padding: 1rem;
+    text-align: center;
+    animation: fadeIn 0.5s ease-in;
+}
+.car-card img {
+    max-width: 100%;
+}
+.car-card h3 {
+    color: #32CD32; 
+}
+
+
+.filters {
+    text-align: center;
+    padding: 1rem;
+}
+.filters select {
+    padding: 0.5rem;
+    background: #87CEEB; 
+    color: #333;
+}
+
+
+.about {
+    padding: 2rem;
+}
+.about h1 {
+    color: #32CD32; 
+}
+.timeline-item {
+    margin: 1rem 0;
+}
+.timeline-item h3 {
+    color: #32CD32; 
+}
+
+
+.contact {
+    padding: 2rem;
+    max-width: 500px;
+    margin: auto;
+}
+.contact h1 {
+    color: #32CD32; 
+}
+.contact input, .contact textarea {
+    width: 100%;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border: 1px solid #CCCCCC; 
+}
+.contact button {
+    width: 100%;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    background: #87CEEB; 
+    color: #333;
+    border: none;
+}
+
+
+footer {
+    background: #333333; 
+    text-align: center;
+    padding: 1rem;
+}
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+.footer-nav li {
+    margin: 0 1rem;
+}
+.footer-nav a {
+    color: #87CEEB; 
+    text-decoration: none;
+}
+
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+
+@media (max-width: 600px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: #333333; 
+        width: 100%;
+        position: absolute;
+        top: 50px;
+        left: 0;
+    }
+    .nav-links.active {
+        display: flex;
+    }
+    .hamburger {
+        display: block;
+    }
+}
